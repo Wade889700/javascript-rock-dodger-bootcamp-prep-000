@@ -36,7 +36,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
   var top = 0 // Hmmm, why would we have used `var` here?
   rock.style.top = `${top}px`
-  GAME.append(rock); /* Now that we have a rock, we'll need to append it to GAME and move it downwards.*/
+  GAME.appendChild(rock); /* Now that we have a rock, we'll need to append it to GAME and move it downwards.*/
  
   function moveRock() {   /*This function moves the rock. (2 pixels at a time seems like a good pace.)*/
     if (checkCollision(rock)===true){  /* If a rock collides with the DODGER, we should call endGame()*/
